@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane style="-fx-background-image: url('file:./Services_Businessman_Auto.jpg');
+-fx-background-size: 700 600;" prefHeight="700.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.261" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.carmgmt.controller.UserController">
+
+   <children>
+
+    <Label layoutX="200.0" layoutY="30.0" text="User/Admin Registration " textFill="#ffffff"/>
+    <Label layoutX="100.0" layoutY="80.0" text="UserName" textFill="#ffffff"/>
+    <Label layoutX="100.0" layoutY="120.0" text="Password" textFill="#ffffff" />
+    <Label layoutX="100.0" layoutY="160.0" text="Email" textFill="#ffffff"/>
+    <Label layoutX="100.0" layoutY="200.0" text="Mobile" textFill="#ffffff" />
+    <Label layoutX="100.0" layoutY="240.0" text="Type" textFill="#ffffff"/>
+
+       <TextField fx:id="userName" layoutX="250.00" layoutY="80.0" />
+       <PasswordField fx:id="password" layoutX="250.0" layoutY="120.0" />
+       <TextField fx:id="email" layoutX="250.00" layoutY="160.0" />
+       <TextField fx:id="mobileNumber" layoutX="250.0" layoutY="200.0" />
+       <RadioButton fx:id="employeeRadioBtn" layoutX="250.0" layoutY="240.0" mnemonicParsing="false" onAction="#checkRadioBtn" text="Admin" textFill="#ffffff"/>
+       <RadioButton fx:id="customerRadioBtn" layoutX="350.0" layoutY="240.0" mnemonicParsing="false" onAction="#checkRadioBtn" text="Customer" textFill="#ffffff"/>
+
+
+      <Button layoutX="210.0" layoutY="331.0" mnemonicParsing="false" text="Submit" onAction="#addUser" />
+      <Button layoutX="300.0" layoutY="331.0" mnemonicParsing="false" text="Back" onAction="#backBtn" fx:id="backBtn"/>
+
+       <Label fx:id="response" layoutX="79.0" layoutY="530.0" prefHeight="17.0" prefWidth="420.0" />
+
+
+   </children>
+
+</AnchorPane>
